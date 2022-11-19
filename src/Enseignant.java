@@ -44,7 +44,11 @@ public class Enseignant {
                 Objects.equals(prenom, that.prenom);
     }
 
+    @Override
+    public int hashCode() {
 
+        return Objects.hash(id, nom, prenom);
+    }
 
     @Override
     public String toString() {
